@@ -7,6 +7,8 @@ After the nervous signal (H-reflex / M-wave) reach the neuromuscular junction, i
 
 High Density surface Electro-Myography (HDsEMG) is a method of measuring the electric signal across a wide area of muslce fibre using a grid of electrodes, therefore enhancing the spatial resolution of the conduction pathway of the Action Potentials. OT Biolab is a software used to record and export data from HDsEMG. In this particular research, external electrical stimulations were applied in varying intensities in postural conditions.
 
+Due to the difference in Action Potential threshold between peripheral sensory neurons and motor neurons, after a stimulus artifact there is an initial window for M-wave and H-reflex following. At smaller intensities there will be no M-wave, and at larger intensities the M wave will override the H-reflex, and may eventually result in a F-wave.
+
 This Python code takes csv files exported from OT Biolab. The files must be single differential signals, which take the difference between signals from two adjacent columns. 
 The main components of the code are:
 Take the csv file (separated by semicolons for some reason) and convert to a Pandas DataFrame.
